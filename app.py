@@ -362,8 +362,8 @@ div[data-testid="metric-container"] div[data-testid="stMetricValue"] {
 with st.sidebar:
     st.markdown("""
     <div style='padding:0.5rem 0 1.5rem;'>
-        <div style='font-family:Syne,sans-serif;font-size:1.6rem;font-weight:800;
-                    color:#e8e8e8;letter-spacing:-0.02em;'>
+        <div style='font-family:Syne,sans-serif;font-size:1.2rem;font-weight:800;
+                    color:#e8e8e8;letter-spacing:-0.02em;white-space:nowrap;'>
             Pneumo<span style='color:#c8a96e;'>Scan</span>
         </div>
         <div style='font-family:DM Mono,monospace;font-size:0.65rem;
@@ -373,35 +373,8 @@ with st.sidebar:
     </div>
     <div style='height:1px;background:rgba(255,255,255,0.06);margin-bottom:1.5rem;'></div>
  
-    <div class='sec-header'>Model Info</div>
-    <div class='icard'>
-        <div style='display:flex;flex-direction:column;gap:0.6rem;'>
-            <div style='display:flex;justify-content:space-between;'>
-                <span class='icard-text'>Architecture</span>
-                <span style='font-family:DM Mono,monospace;font-size:0.75rem;color:#e8e8e8;'>ResNet-34</span>
-            </div>
-            <div style='display:flex;justify-content:space-between;'>
-                <span class='icard-text'>Framework</span>
-                <span style='font-family:DM Mono,monospace;font-size:0.75rem;color:#e8e8e8;'>FastAI 2.x</span>
-            </div>
-            <div style='display:flex;justify-content:space-between;'>
-                <span class='icard-text'>Input</span>
-                <span style='font-family:DM Mono,monospace;font-size:0.75rem;color:#e8e8e8;'>224 × 224 px</span>
-            </div>
-            <div style='display:flex;justify-content:space-between;'>
-                <span class='icard-text'>Classes</span>
-                <span style='font-family:DM Mono,monospace;font-size:0.75rem;color:#e8e8e8;'>Normal / Pneumonia</span>
-            </div>
-            <div style='display:flex;justify-content:space-between;align-items:center;'>
-                <span class='icard-text'>Status</span>
-                <span style='font-family:DM Mono,monospace;font-size:0.75rem;'>
-                    <span class='pulse-dot'></span>Online
-                </span>
-            </div>
-        </div>
-    </div>
- 
-    <div class='sec-header' style='margin-top:1.5rem;'>About Pneumonia</div>
+    <div class='sec-header'>About Pneumonia</div>
+                
     <div class='icard'>
         <div class='icard-text'>
             Pneumonia inflames the air sacs in one or both lungs, which may fill with fluid or pus.
@@ -755,3 +728,4 @@ with tab3:
         Statistics are approximations for educational purposes only.
     </div>
     """, unsafe_allow_html=True)
+ 
